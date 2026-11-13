@@ -20,6 +20,7 @@ BASE='https://avg-kitti.s3.eu-central-1.amazonaws.com/'
 class RemoteZipFile(io.RawIOBase):
     def __init__(self,url):
         self.url=url; self.pos=0; self.transferred=0
+        self.cache_start=0; self.cache=b''; self.block=1024*1024
         with urllib.request.urlopen(urllib.request.Request(url,method='HEAD'),timeout=60) as r:
             self.length=int(r.headers['Content-Length'])
     def seekable(self):return True
@@ -31,20 +32,28 @@ class RemoteZipFile(io.RawIOBase):
     def read(self,n=-1):
         n=min(n if n>=0 else self.length-self.pos,self.length-self.pos)
         if n<=0:return b''
-        start=self.pos;end=start+n-1
+        if self.cache_start <= self.pos and self.pos+n <= self.cache_start+len(self.cache):
+            offset=self.pos-self.cache_start;data=self.cache[offset:offset+n];self.pos+=n;return data
+        # ZIP reads a local header, filename, extra fields, then compressed data.
+        # Read-ahead makes those tiny reads share one range, avoiding hundreds
+        # of latency-bound requests without downloading unrelated sequences.
+        start=(self.pos//self.block)*self.block
+        count=min(max(self.block,self.pos-start+n),self.length-start)
+        end=start+count-1
         for attempt in range(4):
             try:
-                # Range-specific query also avoids stale proxy range caches.
                 req=urllib.request.Request(self.url+f'?range={start}-{end}',headers={'Range':f'bytes={start}-{end}'})
                 with urllib.request.urlopen(req,timeout=90) as r:
                     if r.status!=206 or not r.headers.get('Content-Range','').startswith(f'bytes {start}-{end}/'):
                         raise RuntimeError('server ignored HTTP range; refusing full dataset download')
-                    b=r.read(n+1)
-                if len(b)!=n:raise IOError('truncated HTTP range')
-                self.pos+=n;self.transferred+=n;return b
+                    b=r.read(count+1)
+                if len(b)!=count:raise IOError('truncated HTTP range')
+                self.cache_start=start;self.cache=b;self.transferred+=count
+                return self.read(n)
             except (OSError,TimeoutError):
                 if attempt==3:raise
                 time.sleep(1+attempt)
+
 
 
 def main():
