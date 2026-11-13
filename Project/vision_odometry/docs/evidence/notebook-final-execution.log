@@ -1,0 +1,56 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+START cell 0
+START cell 1
+START cell 2
+From https://github.com/wagnerdgarcia/Visao_Computacional
+ * branch            feat/validated-mono-stereo-odometry -> FETCH_HEAD
+   a378dee..a7ee87e  feat/validated-mono-stereo-odometry -> origin/feat/validated-mono-stereo-odometry
+Previous HEAD position was a378dee perf(data): cache HTTP ranges for fast bounded KITTI subset downloads
+HEAD is now at a7ee87e fix(colab): force headless plotting before importing matplotlib
+DONE cell 2
+START cell 3
+START cell 4
+-- Configuring done
+-- Generating done
+-- Build files have been written to: TASK_ROOT/work/fresh_colab_runtime_v2/Visao_Computacional/Project/vision_odometry/build
+Consolidate compiler generated dependencies of target vo_core
+[ 33%] Built target vo_core
+Consolidate compiler generated dependencies of target vision_odometry
+Consolidate compiler generated dependencies of target test_geometry
+[ 66%] Built target vision_odometry
+[100%] Built target test_geometry
+Python OpenCV 4.11.0 NumPy 1.26.4
+4.5.4
+DONE cell 4
+START cell 5
+START cell 6
+Internal ctest changing into directory: TASK_ROOT/work/fresh_colab_runtime_v2/Visao_Computacional/Project/vision_odometry/build
+Test project TASK_ROOT/work/fresh_colab_runtime_v2/Visao_Computacional/Project/vision_odometry/build
+    Start 1: geometry
+1/1 Test #1: geometry .........................   Passed    0.13 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.13 sec
+......................................................                   [100%]
+54 passed in 2.94s
+DONE cell 6
+START cell 7
+START cell 8
+DONE cell 8
+START cell 9
+START cell 10
+kitti00 python mono: exit=0 11.9s
+kitti00 cpp mono: exit=0 10.8s
+kitti00 python stereo: exit=0 23.0s
+kitti00 cpp stereo: exit=0 19.7s
+Evaluation complete. Arena metrics are disagreement, not ground-truth accuracy.
+DONE cell 10
+START cell 11
+START cell 12
+START cell 13
+DONE cell 13
+START cell 14
+START cell 15
+DONE cell 15
+NOTEBOOK ALL CELLS EXECUTED

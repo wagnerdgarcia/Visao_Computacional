@@ -1,0 +1,3 @@
+make: Entering directory 'Project/vision_odometry'
+cmake -E rm -rf build
+make: Leaving directory 'Project/vision_odometry'

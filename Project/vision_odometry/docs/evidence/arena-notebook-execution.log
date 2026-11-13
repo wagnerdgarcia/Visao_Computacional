@@ -1,0 +1,20 @@
+arena1 python mono: exit=0 11.0s
+arena1 cpp mono: exit=0 9.6s
+arena1 python stereo: exit=0 21.7s
+arena2 python mono: exit=0 11.1s
+arena1 cpp stereo: exit=0 22.2s
+arena2 cpp mono: exit=0 10.1s
+arena2 python stereo: exit=0 22.5s
+arena3 python mono: exit=0 8.7s
+arena2 cpp stereo: exit=0 22.7s
+arena3 python stereo: exit=0 18.3s
+arena3 cpp mono: exit=0 7.9s
+arena3 cpp stereo: exit=0 16.7s
+Evaluation complete. Arena metrics are disagreement, not ground-truth accuracy.
+arena1 mono disagreement with FAST-LIO, NOT accuracy
+arena1 stereo disagreement with FAST-LIO, NOT accuracy
+arena2 mono disagreement with FAST-LIO, NOT accuracy
+arena2 stereo disagreement with FAST-LIO, NOT accuracy
+arena3 mono disagreement with FAST-LIO, NOT accuracy
+arena3 stereo disagreement with FAST-LIO, NOT accuracy
+ARENA NOTEBOOK OPTIONAL CELL EXECUTED SUCCESSFULLY

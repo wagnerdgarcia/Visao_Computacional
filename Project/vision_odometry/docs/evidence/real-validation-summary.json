@@ -1,0 +1,743 @@
+[
+  {
+    "name": "arena1_cpp_mono",
+    "mode": "mono",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 155,
+    "states": {
+      "ANCHOR": 5,
+      "ROTATION_ONLY": 1,
+      "DEGENERATE": 21,
+      "INITIALIZED": 5,
+      "TRACKING": 150,
+      "PNP_REJECTED": 6,
+      "REINITIALIZING": 4,
+      "INSUFFICIENT": 7
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 146,
+        "paired": 146,
+        "status": "evaluated",
+        "alignment_scale": 0.12479031656091752,
+        "position_rmse": 0.018604174300617626,
+        "position_p95": 0.02936852806135593,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 136,
+        "rpe_translation_rmse": 0.02186205668668646,
+        "rpe_rotation_rmse_deg": 0.7128739599119494,
+        "start_timestamp": 1794317448.6806843,
+        "end_timestamp": 1794317463.4970248
+      },
+      {
+        "segment": 1,
+        "accepted": 1,
+        "paired": 1,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 2,
+        "accepted": 2,
+        "paired": 2,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 3,
+        "accepted": 1,
+        "paired": 1,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 4,
+        "accepted": 5,
+        "paired": 4,
+        "status": "too few paired poses"
+      }
+    ]
+  },
+  {
+    "name": "arena1_cpp_stereo",
+    "mode": "stereo",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 196,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 195,
+      "PNP_REJECTED": 3
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 196,
+        "paired": 194,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.039160057917618896,
+        "position_p95": 0.06558507619781295,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 181,
+        "rpe_translation_rmse": 0.01412161649727147,
+        "rpe_rotation_rmse_deg": 0.6688980960787007,
+        "start_timestamp": 1794317447.9750178,
+        "end_timestamp": 1794317467.731302
+      }
+    ]
+  },
+  {
+    "name": "arena1_python_mono",
+    "mode": "mono",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 153,
+    "states": {
+      "ANCHOR": 6,
+      "ROTATION_ONLY": 1,
+      "DEGENERATE": 21,
+      "INITIALIZED": 5,
+      "TRACKING": 148,
+      "PNP_REJECTED": 7,
+      "REINITIALIZING": 5,
+      "INSUFFICIENT": 6
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 145,
+        "paired": 145,
+        "status": "evaluated",
+        "alignment_scale": 0.12479379413144334,
+        "position_rmse": 0.018934596469669107,
+        "position_p95": 0.030757187752122345,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 135,
+        "rpe_translation_rmse": 0.02155319359428419,
+        "rpe_rotation_rmse_deg": 0.696552574397302,
+        "start_timestamp": 1794317448.6806843,
+        "end_timestamp": 1794317463.2954023
+      },
+      {
+        "segment": 1,
+        "accepted": 1,
+        "paired": 1,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 2,
+        "accepted": 1,
+        "paired": 1,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 3,
+        "accepted": 1,
+        "paired": 1,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 4,
+        "accepted": 5,
+        "paired": 5,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 5,
+        "accepted": 0,
+        "paired": 0,
+        "status": "too few paired poses"
+      }
+    ]
+  },
+  {
+    "name": "arena1_python_stereo",
+    "mode": "stereo",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 196,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 195,
+      "PNP_REJECTED": 3
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 196,
+        "paired": 194,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.039077247685820216,
+        "position_p95": 0.06546012864542439,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 181,
+        "rpe_translation_rmse": 0.014099935032660412,
+        "rpe_rotation_rmse_deg": 0.6691821215921586,
+        "start_timestamp": 1794317447.9750178,
+        "end_timestamp": 1794317467.731302
+      }
+    ]
+  },
+  {
+    "name": "arena2_cpp_mono",
+    "mode": "mono",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 116,
+    "states": {
+      "ANCHOR": 1,
+      "STATIONARY": 76,
+      "ROTATION_ONLY": 1,
+      "DEGENERATE": 5,
+      "INITIALIZED": 1,
+      "TRACKING": 115
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 116,
+        "paired": 115,
+        "status": "evaluated",
+        "alignment_scale": 0.18739343594523436,
+        "position_rmse": 0.038907263626064455,
+        "position_p95": 0.10420508873982243,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 105,
+        "rpe_translation_rmse": 0.04248682975980287,
+        "rpe_rotation_rmse_deg": 0.8798037169948942,
+        "start_timestamp": 1794317680.7599883,
+        "end_timestamp": 1794317692.249183
+      }
+    ]
+  },
+  {
+    "name": "arena2_cpp_stereo",
+    "mode": "stereo",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 199,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 198
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 199,
+        "paired": 197,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.03780341873477654,
+        "position_p95": 0.059017189220059996,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 187,
+        "rpe_translation_rmse": 0.012042196523893878,
+        "rpe_rotation_rmse_deg": 0.6386849093749773,
+        "start_timestamp": 1794317672.4941752,
+        "end_timestamp": 1794317692.249183
+      }
+    ]
+  },
+  {
+    "name": "arena2_python_mono",
+    "mode": "mono",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 116,
+    "states": {
+      "ANCHOR": 1,
+      "STATIONARY": 76,
+      "ROTATION_ONLY": 1,
+      "DEGENERATE": 5,
+      "INITIALIZED": 1,
+      "TRACKING": 115
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 116,
+        "paired": 115,
+        "status": "evaluated",
+        "alignment_scale": 0.18786104636671772,
+        "position_rmse": 0.03933466689497268,
+        "position_p95": 0.10493313262011877,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 105,
+        "rpe_translation_rmse": 0.042725012310174906,
+        "rpe_rotation_rmse_deg": 0.8866232945276574,
+        "start_timestamp": 1794317680.7599883,
+        "end_timestamp": 1794317692.249183
+      }
+    ]
+  },
+  {
+    "name": "arena2_python_stereo",
+    "mode": "stereo",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 199,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 198
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 199,
+        "paired": 197,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.03782130610641403,
+        "position_p95": 0.05905919053232944,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 187,
+        "rpe_translation_rmse": 0.012035955301607304,
+        "rpe_rotation_rmse_deg": 0.6386676253012135,
+        "start_timestamp": 1794317672.4941752,
+        "end_timestamp": 1794317692.249183
+      }
+    ]
+  },
+  {
+    "name": "arena3_cpp_mono",
+    "mode": "mono",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 166,
+    "states": {
+      "ANCHOR": 4,
+      "STATIONARY": 3,
+      "ROTATION_ONLY": 1,
+      "DEGENERATE": 10,
+      "INITIALIZED": 3,
+      "TRACKING": 163,
+      "PNP_REJECTED": 9,
+      "REINITIALIZING": 3,
+      "PLANAR": 1,
+      "INSUFFICIENT": 2
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 157,
+        "paired": 157,
+        "status": "evaluated",
+        "alignment_scale": 0.09683260751880758,
+        "position_rmse": 0.02737216342332366,
+        "position_p95": 0.05011648663883084,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 146,
+        "rpe_translation_rmse": 0.021206222746654735,
+        "rpe_rotation_rmse_deg": 0.9147389320296251,
+        "start_timestamp": 1794317848.6245775,
+        "end_timestamp": 1794317864.7522552
+      },
+      {
+        "segment": 1,
+        "accepted": 4,
+        "paired": 4,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 2,
+        "accepted": 5,
+        "paired": 5,
+        "status": "too few paired poses"
+      },
+      {
+        "segment": 3,
+        "accepted": 0,
+        "paired": 0,
+        "status": "too few paired poses"
+      }
+    ]
+  },
+  {
+    "name": "arena3_cpp_stereo",
+    "mode": "stereo",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 197,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 196,
+      "PNP_REJECTED": 2
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 197,
+        "paired": 195,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.03095039044238468,
+        "position_p95": 0.06148801232846463,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 184,
+        "rpe_translation_rmse": 0.014319506161000667,
+        "rpe_rotation_rmse_deg": 0.8444981444688823,
+        "start_timestamp": 1794317847.8181145,
+        "end_timestamp": 1794317867.574561
+      }
+    ]
+  },
+  {
+    "name": "arena3_python_mono",
+    "mode": "mono",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 174,
+    "states": {
+      "ANCHOR": 2,
+      "STATIONARY": 3,
+      "ROTATION_ONLY": 1,
+      "DEGENERATE": 9,
+      "INITIALIZED": 2,
+      "TRACKING": 172,
+      "PNP_REJECTED": 6,
+      "REINITIALIZING": 1,
+      "PLANAR": 1,
+      "INSUFFICIENT": 2
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 159,
+        "paired": 159,
+        "status": "evaluated",
+        "alignment_scale": 0.12341720005915528,
+        "position_rmse": 0.03264684552238668,
+        "position_p95": 0.04432552933456088,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 149,
+        "rpe_translation_rmse": 0.02384484052404103,
+        "rpe_rotation_rmse_deg": 0.943079909055331,
+        "start_timestamp": 1794317848.6245775,
+        "end_timestamp": 1794317864.9538767
+      },
+      {
+        "segment": 1,
+        "accepted": 15,
+        "paired": 14,
+        "status": "evaluated",
+        "alignment_scale": 0.14115729898128032,
+        "position_rmse": 0.0032742879575058245,
+        "position_p95": 0.005193199100075491,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 5,
+        "rpe_translation_rmse": 0.017159155072034863,
+        "rpe_rotation_rmse_deg": 0.45408925999991084,
+        "start_timestamp": 1794317866.0626712,
+        "end_timestamp": 1794317867.4737816
+      }
+    ]
+  },
+  {
+    "name": "arena3_python_stereo",
+    "mode": "stereo",
+    "reference_kind": "fastlio",
+    "meaning": "disagreement with FAST-LIO, NOT accuracy",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": [
+      "kalibr/livox/imu",
+      "kalibr/livox/link",
+      "kalibr/fcu",
+      "kalibr/rgbd/link",
+      "kalibr/rgbd/aligned_depth_to_infra1",
+      "kalibr/rgbd/infra1_optical"
+    ],
+    "reference_tf_note": "Recorded nominal static transforms; physical camera-LiDAR calibration not independently verified",
+    "frame_count": 199,
+    "accepted_count": 198,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 197,
+      "PNP_REJECTED": 1
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 198,
+        "paired": 196,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.03056397514751797,
+        "position_p95": 0.06111235447819162,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 185,
+        "rpe_translation_rmse": 0.014220054701171556,
+        "rpe_rotation_rmse_deg": 0.8417012117417907,
+        "start_timestamp": 1794317847.8181145,
+        "end_timestamp": 1794317867.574561
+      }
+    ]
+  },
+  {
+    "name": "kitti00_cpp_mono",
+    "mode": "mono",
+    "reference_kind": "ground_truth",
+    "meaning": "error against ground truth",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": null,
+    "reference_tf_note": null,
+    "frame_count": 60,
+    "accepted_count": 59,
+    "states": {
+      "ANCHOR": 1,
+      "INITIALIZED": 1,
+      "TRACKING": 58
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 59,
+        "paired": 59,
+        "status": "evaluated",
+        "alignment_scale": 0.7229365536668413,
+        "position_rmse": 0.16320059548141969,
+        "position_p95": 0.22123759839964666,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 49,
+        "rpe_translation_rmse": 0.26246047702733727,
+        "rpe_rotation_rmse_deg": 0.5852088910498734,
+        "start_timestamp": 0.1037359,
+        "end_timestamp": 6.116541
+      }
+    ]
+  },
+  {
+    "name": "kitti00_cpp_stereo",
+    "mode": "stereo",
+    "reference_kind": "ground_truth",
+    "meaning": "error against ground truth",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": null,
+    "reference_tf_note": null,
+    "frame_count": 60,
+    "accepted_count": 60,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 59
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 60,
+        "paired": 60,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.3166458317034267,
+        "position_p95": 0.698164267803976,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 50,
+        "rpe_translation_rmse": 0.3425864742923671,
+        "rpe_rotation_rmse_deg": 0.5310817458865572,
+        "start_timestamp": 0.0,
+        "end_timestamp": 6.116541
+      }
+    ]
+  },
+  {
+    "name": "kitti00_python_mono",
+    "mode": "mono",
+    "reference_kind": "ground_truth",
+    "meaning": "error against ground truth",
+    "alignment": "Sim(3), one global scale per independent segment",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": null,
+    "reference_tf_note": null,
+    "frame_count": 60,
+    "accepted_count": 59,
+    "states": {
+      "ANCHOR": 1,
+      "INITIALIZED": 1,
+      "TRACKING": 58
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 59,
+        "paired": 59,
+        "status": "evaluated",
+        "alignment_scale": 0.7224002576030284,
+        "position_rmse": 0.1491883322189663,
+        "position_p95": 0.19001842559299528,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 49,
+        "rpe_translation_rmse": 0.2473733065717195,
+        "rpe_rotation_rmse_deg": 0.5777510131162785,
+        "start_timestamp": 0.1037359,
+        "end_timestamp": 6.116541
+      }
+    ]
+  },
+  {
+    "name": "kitti00_python_stereo",
+    "mode": "stereo",
+    "reference_kind": "ground_truth",
+    "meaning": "error against ground truth",
+    "alignment": "SE(3), rigid, scale FIXED to 1",
+    "reference_used_for_estimation": false,
+    "reference_tf_route": null,
+    "reference_tf_note": null,
+    "frame_count": 60,
+    "accepted_count": 60,
+    "states": {
+      "ANCHOR": 1,
+      "TRACKING": 59
+    },
+    "segments": [
+      {
+        "segment": 0,
+        "accepted": 60,
+        "paired": 60,
+        "status": "evaluated",
+        "alignment_scale": 1.0,
+        "position_rmse": 0.3165015637613436,
+        "position_p95": 0.6979940755614549,
+        "rpe_dt_seconds": 1.0,
+        "rpe_pairs": 50,
+        "rpe_translation_rmse": 0.3425301394693676,
+        "rpe_rotation_rmse_deg": 0.531011103000902,
+        "start_timestamp": 0.0,
+        "end_timestamp": 6.116541
+      }
+    ]
+  }
+]

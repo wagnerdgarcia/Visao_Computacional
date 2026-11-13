@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "arena1",
+    "bag_name": "realsense_livox_arena_1_20261110_103019",
+    "files": [
+      {
+        "name": "realsense_livox_20261110_103019_0.mcap",
+        "bytes": 1945664718
+      }
+    ],
+    "start_seconds_from_first_image": 20.0,
+    "duration_seconds": 20.0,
+    "stride": 6,
+    "pairs": 199,
+    "unpaired_selected_left": 0,
+    "pairing": "exact integer header nanoseconds; no reuse",
+    "max_stereo_delta_ns": 0,
+    "baseline_m": 0.05000787177704881,
+    "reference_samples": 195,
+    "reference": "FAST-LIO estimate, NOT ground truth",
+    "imu": "Preserved independently; gyro rad/s, RealSense accel m/s^2; Livox raw acceleration may be g. Not input to visual estimator."
+  },
+  {
+    "dataset": "arena2",
+    "bag_name": "realsense_livox_arena_2_20261110_103404",
+    "files": [
+      {
+        "name": "realsense_livox_20261110_103404_0.mcap",
+        "bytes": 1918265249
+      }
+    ],
+    "start_seconds_from_first_image": 20.0,
+    "duration_seconds": 20.0,
+    "stride": 6,
+    "pairs": 199,
+    "unpaired_selected_left": 0,
+    "pairing": "exact integer header nanoseconds; no reuse",
+    "max_stereo_delta_ns": 0,
+    "baseline_m": 0.05000787177704881,
+    "reference_samples": 196,
+    "reference": "FAST-LIO estimate, NOT ground truth",
+    "imu": "Preserved independently; gyro rad/s, RealSense accel m/s^2; Livox raw acceleration may be g. Not input to visual estimator."
+  },
+  {
+    "dataset": "arena3",
+    "bag_name": "realsense_livox_arena_3_20261110_103659",
+    "files": [
+      {
+        "name": "realsense_livox_20261110_103659_0.mcap",
+        "bytes": 1649697128
+      }
+    ],
+    "start_seconds_from_first_image": 20.0,
+    "duration_seconds": 20.0,
+    "stride": 6,
+    "pairs": 199,
+    "unpaired_selected_left": 0,
+    "pairing": "exact integer header nanoseconds; no reuse",
+    "max_stereo_delta_ns": 0,
+    "baseline_m": 0.05000787177704881,
+    "reference_samples": 195,
+    "reference": "FAST-LIO estimate, NOT ground truth",
+    "imu": "Preserved independently; gyro rad/s, RealSense accel m/s^2; Livox raw acceleration may be g. Not input to visual estimator."
+  },
+  {
+    "dataset": "kitti00",
+    "source": "https://avg-kitti.s3.eu-central-1.amazonaws.com/",
+    "sequence": "00",
+    "start": 0,
+    "frames": 60,
+    "downloaded_bytes": 42831231,
+    "license": "CC-BY-NC-SA-3.0"
+  }
+]

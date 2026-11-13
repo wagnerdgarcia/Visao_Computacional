@@ -1,0 +1,40 @@
+make: Entering directory 'Project/vision_odometry'
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+-- The CXX compiler identification is GNU 9.5.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4") found components: core imgproc imgcodecs features2d calib3d videoio
+-- Configuring done
+-- Generating done
+-- Build files have been written to: Project/vision_odometry/build
+cmake --build build -j2
+gmake[1]: Entering directory 'Project/vision_odometry/build'
+gmake[1]: warning: -j2 forced in submake: resetting jobserver mode.
+gmake[2]: Entering directory 'Project/vision_odometry/build'
+gmake[3]: Entering directory 'Project/vision_odometry/build'
+gmake[3]: Leaving directory 'Project/vision_odometry/build'
+gmake[3]: Entering directory 'Project/vision_odometry/build'
+[ 16%] Building CXX object CMakeFiles/vo_core.dir/src/odometry.cpp.o
+[ 33%] Linking CXX static library libvo_core.a
+gmake[3]: Leaving directory 'Project/vision_odometry/build'
+[ 33%] Built target vo_core
+gmake[3]: Entering directory 'Project/vision_odometry/build'
+gmake[3]: Entering directory 'Project/vision_odometry/build'
+gmake[3]: Leaving directory 'Project/vision_odometry/build'
+gmake[3]: Leaving directory 'Project/vision_odometry/build'
+gmake[3]: Entering directory 'Project/vision_odometry/build'
+gmake[3]: Entering directory 'Project/vision_odometry/build'
+[ 66%] Building CXX object CMakeFiles/test_geometry.dir/tests/test_geometry.cpp.o
+[ 66%] Building CXX object CMakeFiles/vision_odometry.dir/src/main.cpp.o
+[ 83%] Linking CXX executable test_geometry
+gmake[3]: Leaving directory 'Project/vision_odometry/build'
+[ 83%] Built target test_geometry
+[100%] Linking CXX executable vision_odometry
+gmake[3]: Leaving directory 'Project/vision_odometry/build'
+[100%] Built target vision_odometry
+gmake[2]: Leaving directory 'Project/vision_odometry/build'
+gmake[1]: Leaving directory 'Project/vision_odometry/build'
+make: Leaving directory 'Project/vision_odometry'

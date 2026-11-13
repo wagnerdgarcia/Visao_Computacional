@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-13",
+  "timezone": "America/Recife",
+  "implementation_revision": "a0c13851fa275fbf06518e431c4a6f7dec3b9d6f",
+  "python": "3.10.12",
+  "numpy": "1.26.4",
+  "opencv_python": "4.11.0",
+  "opencv_cpp": "4.5.4",
+  "compiler": "g++ (Ubuntu 9.5.0-1ubuntu1~22.04.1) 9.5.0",
+  "python_tests": 54,
+  "ctest_executables": 1,
+  "cpp_groups": 8,
+  "real_runs": 18,
+  "notebook_execution": "all 16 cells processed successfully; 7 nonempty code cells executed",
+  "notebook_revision": "a7ee87efb2fd6150505ba2b8a9fd1d8b86fd713f",
+  "ci": "success on a7ee87e"
+}

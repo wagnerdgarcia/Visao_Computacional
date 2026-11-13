@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-13",
+  "revision": "a7ee87efb2fd6150505ba2b8a9fd1d8b86fd713f",
+  "total_cells": 16,
+  "nonempty_code_cells": 7,
+  "all_nonempty_code_cells_executed": true,
+  "errors": 0,
+  "environment": "Local isolated environment, created from a fresh sparse clone and a fresh Python venv; no ROS dependency",
+  "final_rerun": "All cells executed from start after backend fix. Reused only the official dataset with all 120 image hashes verified.",
+  "independent_download_hashes_identical": true,
+  "official_download_bytes_with_read_ahead_cache": 183332082,
+  "hosted_google_runtime_executed": false,
+  "hosted_colab_file_updated_and_readback_verified": true,
+  "arena_optional_cell_executed": true,
+  "arena_runs": 12,
+  "arena_cell_source_sha256": "7d189ee98ee656c87e84fa0b56c1429768d51aaf8b19372710d00db15da2f1f1",
+  "original_cell_preserved": true,
+  "discovered_and_fixed": "Inherited MPLBACKEND from notebook kernel incompatible with isolated CLI environment; forced Agg before matplotlib import and added regression test."
+}
