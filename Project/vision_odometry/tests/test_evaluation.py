@@ -30,3 +30,16 @@ def test_tf_chain_and_rotating_lever_arm(tmp_path):
     T,route=ev.tf_chain(p,'body','camera');Ti,_=ev.tf_chain(p,'camera','/body')
     assert np.allclose(T[:3,3],[-1,0,0]) and np.allclose(T@Ti,np.eye(4)) and route==['body','middle','camera']
     with pytest.raises(ValueError):ev.tf_chain(p,'unknown','camera')
+
+def test_headless_plot_ignores_inherited_notebook_backend(tmp_path):
+    import csv,os,subprocess
+    trajectory=tmp_path/'trajectory.csv'
+    with trajectory.open('w',newline='') as f:
+        w=csv.writer(f);w.writerow(['timestamp','inliers','map_points','reprojection_px','epipolar_px','accepted']);w.writerow([1,20,30,.1,.2,1])
+    script=Path(ev.__file__).resolve().parent
+    code="import sys;sys.path.insert(0,sys.argv[1]);import evaluate;evaluate.plot_diagnostics(sys.argv[2],[],{'meaning':'test','mode':'mono','alignment':'test'},sys.argv[3])"
+    env=os.environ.copy();env['MPLBACKEND']='module://not_installed_notebook_backend'
+    out=tmp_path/'plot.png'
+    p=__import__('subprocess').run([sys.executable,'-c',code,str(script),str(trajectory),str(out)],env=env,capture_output=True,text=True)
+    assert p.returncode==0,p.stderr
+    assert out.is_file() and out.stat().st_size>1000

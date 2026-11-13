@@ -127,6 +127,9 @@ def plot_diagnostics(trajectory,aligned,summary,path):
     cache=Path(path).resolve().parent/".matplotlib-cache"
     cache.mkdir(parents=True,exist_ok=True)
     os.environ.setdefault("MPLCONFIGDIR",str(cache))
+    # Notebook kernels export an inline backend that is absent in the isolated
+    # command-line environment. Force the headless backend before importing.
+    os.environ["MPLBACKEND"]="Agg"
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
