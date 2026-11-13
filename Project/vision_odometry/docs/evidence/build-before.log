@@ -1,0 +1,4 @@
+make: Entering directory 'Project/vision_odometry'
+g++ -Iinclude -I/usr/include/eigen3 -Wall -std=c++17 `pkg-config --cflags opencv4` -c src/mono_odometry.cpp -o src/mono_odometry.o
+g++ src/mono_odometry.o -o vision_odometry `pkg-config --libs opencv4`
+make: Leaving directory 'Project/vision_odometry'

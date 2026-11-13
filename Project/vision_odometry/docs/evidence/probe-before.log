@@ -1,0 +1,3 @@
+empty_distances=-nan,-nan,-nan finite=0
+single_train_exception=OpenCV(4.5.4) ./modules/flann/src/miniflann.cpp:521: error: (-215:Assertion failed) (size_t)knn <= index_->size() in function 'runKnnSearch_'
+

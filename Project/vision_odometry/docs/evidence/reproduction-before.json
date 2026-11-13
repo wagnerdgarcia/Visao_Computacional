@@ -1,0 +1,51 @@
+{
+  "base_commit": "3d347e2ce05aab3ec33f911dd35b58f9e45b3411",
+  "checks": {
+    "build": {
+      "returncode": 0,
+      "stdout": "g++ -Iinclude -I/usr/include/eigen3 -Wall -std=c++17 `pkg-config --cflags opencv4` -c src/mono_odometry.cpp -o src/mono_odometry.o\ng++ src/mono_odometry.o -o vision_odometry `pkg-config --libs opencv4`\n",
+      "stderr": ""
+    },
+    "clean": {
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Makefile:36: *** unterminated variable reference.  Stop.\n"
+    },
+    "probe": {
+      "stdout": "empty_distances=-nan,-nan,-nan finite=0\nNenhum keypoint encontrado no frame atual.\nstale_output_sizes_after_blank=2,2\nsingle_train_exception=OpenCV(4.5.4) ./modules/flann/src/miniflann.cpp:521: error: (-215:Assertion failed) (size_t)knn <= index_->size() in function 'runKnnSearch_'\n\nlegacy_displacement=[0, 1, 0] expected=[0, -1, 0]\n",
+      "stderr": ""
+    },
+    "video_match_counts": [
+      {
+        "previous_frame": 0,
+        "current_frame": 1,
+        "legacy_gates": 78,
+        "ratio_mutual_no_displacement_cap": 272
+      },
+      {
+        "previous_frame": 30,
+        "current_frame": 31,
+        "legacy_gates": 321,
+        "ratio_mutual_no_displacement_cap": 370
+      },
+      {
+        "previous_frame": 150,
+        "current_frame": 151,
+        "legacy_gates": 25,
+        "ratio_mutual_no_displacement_cap": 251
+      },
+      {
+        "previous_frame": 150,
+        "current_frame": 165,
+        "legacy_gates": 0,
+        "ratio_mutual_no_displacement_cap": 202
+      },
+      {
+        "previous_frame": 600,
+        "current_frame": 601,
+        "legacy_gates": 68,
+        "ratio_mutual_no_displacement_cap": 344
+      }
+    ]
+  }
+}
