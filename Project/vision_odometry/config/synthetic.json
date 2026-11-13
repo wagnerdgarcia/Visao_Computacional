@@ -1,0 +1,11 @@
+{
+ "width": 640, "height": 480,
+ "K_left": [[400,0,320],[0,400,240],[0,0,1]],
+ "D_left": [0,0,0,0,0],
+ "K_right": [[400,0,320],[0,400,240],[0,0,1]],
+ "D_right": [0,0,0,0,0],
+ "R_right_left": [[1,0,0],[0,1,0],[0,0,1]],
+ "T_right_left": [-0.2,0,0],
+ "translation_unit": "m", "already_rectified": true,
+ "provenance": "SYNTHETIC TEST ONLY. Not a calibration for any real camera."
+}

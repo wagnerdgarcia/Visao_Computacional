@@ -1,0 +1,6 @@
+{
+ "width":1280,"height":720,
+ "K_left":[[924.2758995009278,0,640.5],[0,924.2759313476419,360.5],[0,0,1]],
+ "D_left":[0,0,0,0,0],
+ "provenance":"UNVERIFIED inherited constants, source commit 3d347e2. Zero distortion is an assumption, not a measured calibration. Functional mono video test only; no accuracy claims."
+}

@@ -1,0 +1,9 @@
+/build/
+/data/
+/results/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.o
+/vision_odometry
+.venv/
